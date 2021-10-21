@@ -3,6 +3,8 @@ from varasto import Varasto
 
 
 class TestVarasto(unittest.TestCase):
+
+def ogk():
     def setUp(self):
         self.varasto = Varasto(10)
         self.varasto_saldo_pieni = Varasto(10, -1)
