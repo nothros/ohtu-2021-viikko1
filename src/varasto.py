@@ -1,7 +1,7 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo=0):
-        self.tilavuus = (tilavuus + abs(tilavuus))/2
-        self.saldo = float((alku_saldo + abs(alku_saldo))/2) if alku_saldo <= tilavuus else tilavuus
+        self.tilavuus = (tilavuus + abs(tilavuus))//2
+        self.saldo = (alku_saldo + abs(alku_saldo))//2 if alku_saldo <= tilavuus else tilavuus
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
